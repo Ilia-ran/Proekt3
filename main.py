@@ -40,7 +40,7 @@ st.bar_chart(colors_df)
 # Графика за спортовете
 st.write("Любими спортове")
 sports_df = pd.DataFrame.from_dict(
-st.session_state.sports, orient="index", columns=["Брой"]
+  st.session_state.sports, orient="index", columns=["Брой"]
 )
 st.bar_chart(sports_df)
 
