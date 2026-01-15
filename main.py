@@ -9,13 +9,15 @@ if "colors" not in st.session_state:
     "Син": 0,
     "Зелен": 0,
     "Жълт": 0,
-
+  }
+  
 if "sports" not in st.session_state:
   st.session_state.sports = {
     "Футбол": 0,
     "Баскетбол": 0,
     "Волейбол": 0,
     "Плуване": 0,
+  }
 
 color = st.selectbox("Любим цвят:", list(st.session_state.colors.keys()))
 sport = st.selectbox("Любим цвят:", list(st.session_state.sports.keys()))
